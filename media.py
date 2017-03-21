@@ -1,5 +1,6 @@
 import webbrowser
 
+#create Movie class with movie title, storyline, image, and trailer as parameters
 class Movie():
     def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):
         self.title = movie_title
@@ -7,5 +8,6 @@ class Movie():
         self.poster_image_url = poster_image
         self.trailer_youtube_url = trailer_youtube
 
+    #create show_trailer function that will open a web browser using the trailer url
     def show_trailer(self):
         webbrowser.open(self.trailer_youtube_url)

@@ -1,6 +1,7 @@
 import fresh_tomatoes
 import media
 
+# create instances of the Movie class using my favorite movies
 deadpool = media.Movie("Deadpool",
                         "A fast-talking mercenary with a morbid sense of humor is subjected to a rogue experiment that leaves him with accelerated healing powers and a quest for revenge.",
                         "http://t1.gstatic.com/images?q=tbn:ANd9GcR-fLY3Z9Vn28UB-A3X_w0vjmkHcXG89HWwul5w6-sg3IonPXA_",
@@ -16,6 +17,9 @@ other_guys = media.Movie("The Other Guys",
                          "http://www.gstatic.com/tv/thumb/movieposters/8045197/p8045197_p_v8_aa.jpg",
                          "https://youtu.be/D6WOoUG1eNo")
 
+# store instances of the Movie class in a list
 movies = [deadpool, bernies, other_guys]
+
+# run the open_movies_page function on movies list
 fresh_tomatoes.open_movies_page(movies)
 
